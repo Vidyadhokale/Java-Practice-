@@ -1,13 +1,17 @@
-import java.lang.*;
-public class Student
+public class Student 
 {
-    Student(String name,int age)
+    String name;
+    Student(String name)
     {
-
-        System.out.println("Name:"+name+  "Age:"+age);
+        this.name=name;
+    }
+    void display()
+    {
+        System.out.println("Name:"+name);
     }
     public static void main(String args[])
     {
-        Student s=new Student("vidya ",22);
-    }
+        Student s=new Student("Vidya");
+        s.display();
+    }    
 }
